@@ -1,0 +1,44 @@
+.widgets {
+  flex: 0.3;
+  height: 100vh;
+  overflow-y: scroll;
+}
+.widgets::-webkit-scrollbar {
+  display: none;
+}
+/* NOTE Hides scrol bar for IE and Edge Firefox*/
+.widgets {
+  -ms-overflow-style: none; /*IE and Edge*/
+  scrollbar-width: none; /*Firefox*/
+}
+.widgetsInput {
+  background-color: var(--twitter--background);
+  display: flex;
+  align-items: center;
+  padding: 10px;
+  border-radius: 20px;
+  margin-top: 10px;
+  margin-bottom: 20px;
+}
+.widgetsInput > input {
+  background-color: var(--twitter--background);
+  border: none;
+}
+.widgetsInput > input:focus {
+  outline: none;
+}
+.widgetSearchIcon {
+  color: gray;
+}
+.widgetsWidgetContainer {
+  margin-top: 15px;
+  margin-left: 20px;
+  padding: 20px;
+  background-color: #f5f8fa;
+  border-radius: 20px;
+}
+
+.widgetsWidgetContainer > h2 {
+  font-size: 18px;
+  font-weight: 800;
+}
